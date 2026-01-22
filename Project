@@ -7,6 +7,6 @@ resource "aws_db_instance" "default" {
   instance_class          = "db.t3.micro"
   username                = "shubham"
    manage_master_user_password = true #rds and secret manager manage this password
-#   password                = "Cloud12345"
+#   password                = "Admin123"
   db_subnet_group_name    = aws_db_subnet_group.sub-grp.id
   parameter_group_name    = "default.mysql8.0"
