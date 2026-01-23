@@ -3,7 +3,7 @@ resource "aws_db_instance" "default" {
   db_name                 = "mydb"
   identifier              = "rds-prod"
   engine                  = "mysql"
-  engine_version          = "9.0"
+  engine_version          = "9.1"
   instance_class          = "db.t3.micro"
   username                = "admin"
    manage_master_user_password = true #rds and secret manager manage this password
